@@ -25,6 +25,7 @@ body{
 
 #section-1{
 	background:url(../images/bg1.jpg) 50% 0 no-repeat fixed;
+
 	color: white;
 	height: 753px;
 	margin: 0 auto;
@@ -44,6 +45,7 @@ body{
 	padding: 0;
 	position: relative;
 	z-index: 1;
+	background-size: 100%;
 }
 
 #section-4 {

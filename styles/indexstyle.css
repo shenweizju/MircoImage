@@ -29,11 +29,12 @@
 	float: left;
 	display: inline-block;
 	width: 98px;
+	height: 38px;
 }
 
 #navlist a {
 	display: block;
-	padding: 15px 0 0 0;
+	padding: 10px 0 0 0;
 }
 
 #navlist a:hover {
@@ -44,7 +45,7 @@
 	background: url(../images/navhover.png);
 	color: #000;
 	width: 98px;
-	height: 70px;
+	height: 38px;
 }
 
 .current {

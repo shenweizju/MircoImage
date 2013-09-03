@@ -17,6 +17,7 @@
 <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
 <script type="text/javascript" src="scripts/jquery.nav.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="scripts/test.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 	$(document).ready(function() {
@@ -61,26 +62,39 @@ $(document).ready(function(){
 			</ul>
 		</div>
 	</nav>
+	
+	<section id="pages">
+		<ul class="nostyle">
+			<li id="home">
+				<div id="section-1">
+					<div id="wrapper">
+       						<div class="slider-wrapper theme-default">
+         						<div id="slider" class="nivoSlider">
+                						<img src="images/slider1.jpg" data-thumb="images/toystory.jpg" alt="" />
+           							<img src="images/slider2.jpg" data-thumb="images/up.jpg" alt="" />
+                						<img src="images/slider3.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
+            						</div>
+        						</div>
+    					</div>
+				</div> 
+			</li>
 
-	<div id="section-1">
-		<div id="wrapper">
-       			<div class="slider-wrapper theme-default">
-         			<div id="slider" class="nivoSlider">
-                			<img src="images/slider1.jpg" data-thumb="images/toystory.jpg" alt="" />
-               			<img src="images/slider2.jpg" data-thumb="images/up.jpg" alt="" />
-                			<img src="images/slider3.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
-            			</div>
-        			</div>
-    		</div>
-	</div> <!--#intro-->
+			<li id="services">
+				
+			</li>
+			<li></li>
+			<li></li>
+		</ul>
+	</section>
+	<!--#intro-->
 
 	<div id="section-2">	
 		<section class="service_box main_box">
-			<div class="serv_top top_box" style="border-left-width: 1280px"></div>
+			<div id="top_box" class="serv_top top_box" ></div>
 			<div class="serv_mid">
 			<div class="container"></div>
 			</div>
-			<div class="serv_bot bot_box" style="border-right-width: 1280px"></div>
+			<div class="serv_bot bot_box" style="border-right-width: 1440px"></div>
 		</section>
 	</div><!--#second-->
 
@@ -89,7 +103,7 @@ $(document).ready(function(){
 
 	<div id="section-4">	
 		<section class="service_box main_box">
-			<div class="serv_top top_box" style="border-left-width: 1280px"></div>
+			<div class="serv_top top_box"></div>
 			<div class="serv_mid">
 			<div class="container"></div>
 			</div>
