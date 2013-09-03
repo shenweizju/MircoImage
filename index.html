@@ -29,6 +29,9 @@ $(document).ready(function(){
 		    },
 			scrollOffset: 60
 		  });  
+
+		  $('.top_box').css('borderLeftWidth',window.screen.width+'px');
+		  $('.bot_box').css('borderRightWidth',window.screen.width+'px');
 	});
 
 	$(window).load(function() {
@@ -61,40 +64,52 @@ $(document).ready(function(){
 			</ul>
 		</div>
 	</nav>
+	
+	<section id="pages">
+		<ul class="nostyle">
+			<li id="home">
+				<div id="section-1">
+					<div id="wrapper">
+       						<div class="slider-wrapper theme-default">
+         						<div id="slider" class="nivoSlider">
+                						<img src="images/slider1.jpg" data-thumb="images/toystory.jpg" alt="" />
+           							<img src="images/slider2.jpg" data-thumb="images/up.jpg" alt="" />
+                						<img src="images/slider3.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
+            						</div>
+        						</div>
+    					</div>
+				</div> 
+			</li><!--#home-->
 
-	<div id="section-1">
-		<div id="wrapper">
-       			<div class="slider-wrapper theme-default">
-         			<div id="slider" class="nivoSlider">
-                			<img src="images/slider1.jpg" data-thumb="images/toystory.jpg" alt="" />
-               			<img src="images/slider2.jpg" data-thumb="images/up.jpg" alt="" />
-                			<img src="images/slider3.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
-            			</div>
-        			</div>
-    		</div>
-	</div> <!--#intro-->
+			<li id="services">
+				<div id="section-2">	
+					<section class="service_box main_box">
+						<div class="serv_top top_box" ></div>
+						<div class="serv_mid">
+						<div class="container"></div>
+						</div>
+						<div class="serv_bot bot_box"></div>
+					</section>
+				</div><!--#services-->
+			</li>
 
-	<div id="section-2">	
-		<section class="service_box main_box">
-			<div class="serv_top top_box" style="border-left-width: 1280px"></div>
-			<div class="serv_mid">
-			<div class="container"></div>
-			</div>
-			<div class="serv_bot bot_box" style="border-right-width: 1280px"></div>
-		</section>
-	</div><!--#second-->
+			<li id="works">
+				<div id="section-3">
 
-	<div id="section-3">
-	</div> <!--#third-->
+				</div> <!--#works-->
+			</li>
 
-	<div id="section-4">	
-		<section class="service_box main_box">
-			<div class="serv_top top_box" style="border-left-width: 1280px"></div>
-			<div class="serv_mid">
-			<div class="container"></div>
-			</div>
-			<!-- <div class="serv_bot bot_box" style="border-right-width: 1280px"></div> -->
-		</section>		
-	</div><!--#forth-->
+			<li id="contact">
+				<div id="section-4">	
+					<section class="contact_box main_box">
+						<div class="con_top top_box"></div>
+						<div class="con_mid">
+						<div class="container"></div>
+						</div>
+					</section>		
+				</div><!--#contact-->
+			</li>
+		</ul>
+	</section>
 </body>
 </html>
