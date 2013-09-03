@@ -29,11 +29,12 @@
 	float: left;
 	display: inline-block;
 	width: 98px;
+	height: 38px;
 }
 
 #navlist a {
 	display: block;
-	padding: 15px 0 0 0;
+	padding: 10px 0 0 0;
 }
 
 #navlist a:hover {
@@ -44,7 +45,7 @@
 	background: url(../images/navhover.png);
 	color: #000;
 	width: 98px;
-	height: 70px;
+	height: 38px;
 }
 
 .current {
@@ -61,8 +62,54 @@
 
 /*slider over*/
 
-/*mainstyle*/
-.normal{
-	width: 80%;
-	height: 500px;
+
+/*纯色色块*/
+
+.nostyle {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
+
+.home,.services,.works,.contact{
+	background: black;
+}
+
+.top_box{
+	border-left-width: 716px;
+	border-width: 0 0 60px 2880px;
+	border-style: solid solid solid dashed;
+	width: 0px;
+	height: 0px;
+	z-index: 1500;
+	position: relative;
+}
+
+.serv_top,.con_top{
+	border-color: transparent transparent #ffcc00 transparent;
+}
+
+
+.serv_mid,.con_mid{
+	background: #ffcc00;
+	width: 100%;
+	height: 900px;
+	z-index: 1500;
+	position: relative;
+}
+
+.bot_box{
+	border-right-width: 916px;
+	border-width: 0 3880px 60px 0px;
+	border-style: solid dashed solid solid ;
+	width: 0px;
+	height: 0px;
+	z-index: 1500;
+	position: relative;
+}
+
+.serv_bot,.con_bot{
+	border-color: transparent #ffcc00 transparent  transparent;
+}
+
+/*纯色色块结束*/
