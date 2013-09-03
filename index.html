@@ -9,7 +9,6 @@
 <link rel="stylesheet" type="text/css" href="styles/nivodefault.css"/>
 <link rel="stylesheet" type="text/css" href="styles/nivo-bar.css"/>
 <link rel="stylesheet" type="text/css" href="styles/indexstyle.css" />
-<link rel="stylesheet" type="text/css" href="my.css">
 <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/googlejquery.js"></script>
@@ -30,9 +29,15 @@ $(document).ready(function(){
 			scrollOffset: 60
 		  });  
 
-		  $('.top_box').css('borderLeftWidth',window.screen.width+'px');
-		  $('.bot_box').css('borderRightWidth',window.screen.width+'px');
+		  
 	});
+	$(window).ready(function(){
+		var w = $(window).width();
+		$('.top_box').css('borderLeftWidth',w);
+		$('.bot_box').css('borderRightWidth',w);
+	})
+
+
 
 	$(window).load(function() {
         		$('#slider').nivoSlider({

@@ -62,7 +62,6 @@
 
 /*slider over*/
 
-
 /*纯色色块*/
 
 .nostyle {
@@ -71,7 +70,7 @@
 	padding: 0;
 }
 
-.home,.services,.works,.contact{
+#home,#services,#works,#contact{
 	background: black;
 }
 
@@ -93,9 +92,15 @@
 .serv_mid,.con_mid{
 	background: #ffcc00;
 	width: 100%;
-	height: 900px;
 	z-index: 1500;
 	position: relative;
+}
+
+.serv_mid{
+	height: 700px;
+}
+.con_mid{
+	height: 650px;
 }
 
 .bot_box{
