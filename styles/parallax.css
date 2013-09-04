@@ -25,9 +25,8 @@ body{
 
 #section-1{
 	background:url(../images/bg1.jpg) 50% 0 no-repeat fixed;
-
 	color: white;
-	height: 753px;
+	height: 100%;
 	margin: 0 auto;
 	padding: 0;
 }

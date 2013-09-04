@@ -16,6 +16,7 @@
 <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
 <script type="text/javascript" src="scripts/jquery.nav.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="scripts/jquery.isotope.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 	$(document).ready(function() {
@@ -38,6 +39,12 @@ $(document).ready(function(){
 		$('.bot_box').css('borderRightWidth',w);
 	})
 
+	$(window).resize(function(){
+		var w = $(window).width();
+		$('.top_box').css('borderLeftWidth',w);
+		$('.bot_box').css('borderRightWidth',w);
+	})
+
 
 
 	$(window).load(function() {
@@ -53,7 +60,6 @@ $(document).ready(function(){
 	//xPosition - Horizontal position of the element
 	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	$('#section-1').parallax("50%", 0.2);
 	$('#section-3').parallax("50%", 0.1);
 })
 </script>
