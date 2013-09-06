@@ -24,10 +24,11 @@
 #navlist li{
 	margin: 0px;
 	padding: 0px;
+	list-style: none;
+	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
-	float: left;
-	display: inline-block;
+/*	float: left;*/
 	width: 98px;
 	height: 38px;
 }
@@ -35,6 +36,7 @@
 #navlist a {
 	display: block;
 	padding: 10px 0 0 0;
+	line-height: 100%;
 }
 
 #navlist a:hover {
@@ -52,7 +54,7 @@
 	background: none;
 }
 
-/*end nev*/
+/*end nav*/
 
 /*slider start*/
 .slider-wrapper { 
