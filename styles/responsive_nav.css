@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and(max-width: 815px) {     
+#mainnav{
+   position: relative;
+}
+#navlist{
+	border-top: none;
+}
+
+#navlist li{
+   width: 100%;
+   background: black;
+   height: 35px;
+}
+
+#innernav{
+   width: 100%;
+   height: 100%;
+}
+
+.nav {  
+   position: relative;  
+   min-height: 40px;  
+}    
+
+.nav ul {  
+   width: 100%;  
+   padding: 2px 0;  
+   position: absolute;  
+   top: 90px;  
+   left: 0;  
+   background: #fff url(images/icon-menu.png) no-repeat 10px11px;  
+}  
+.nav li {  
+   display: none; /* hide all <li> items */  
+   margin: 0;  
+}  
+.nav .current {  
+   display: block; /* show only current <li> item */  
+}  
+.nav a {  
+   display: block;  
+   text-align: center;
+   vertical-align: middle;  
+   width: 100%;
+}  
+#navlist .current a {  
+   background: #ffcc00;
+   color: #000;
+   width: 100%;
+}  
+
+/* on nav hover */  
+#navlist ul:hover {  
+   background: #ffcc00;  
+}  
+#navlist ul:hover li {  
+   display: block;  
+   background: #ffcc00;  
+}  
+#navlist ul:hover .current {  
+   background: #ffcc00;  
+}  
+  
+  #navlist a:hover {
+   color: #000;
+    background: #ffcc00;  
+    height: 35px;
+   border-top: solid 1px #000;
+}
+
+#section-3{
+   height: 400px;
+}
