@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="styles/nivodefault.css"/>
 <link rel="stylesheet" type="text/css" href="styles/nivo-bar.css"/>
 <link rel="stylesheet" type="text/css" href="styles/indexstyle.css" />
-<link rel="stylesheet" type="text/css" href="my.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 815px)" href="styles/responsive_nav.css">
 <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/googlejquery.js"></script>
@@ -17,6 +17,7 @@
 <script type="text/javascript" src="scripts/jquery.scrollTo-1.4.2-min.js"></script>
 <script type="text/javascript" src="scripts/jquery.nav.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="scripts/jquery.isotope.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 	$(document).ready(function() {
@@ -30,9 +31,22 @@ $(document).ready(function(){
 			scrollOffset: 60
 		  });  
 
-		  $('.top_box').css('borderLeftWidth',window.screen.width+'px');
-		  $('.bot_box').css('borderRightWidth',window.screen.width+'px');
+		  
 	});
+
+	$(window).ready(function(){
+		var w = $(window).width();
+		$('.top_box').css('borderLeftWidth',w);
+		$('.bot_box').css('borderRightWidth',w);
+	})
+
+	$(window).resize(function(){
+		var w = $(window).width();
+		$('.top_box').css('borderLeftWidth',w);
+		$('.bot_box').css('borderRightWidth',w);
+
+	})
+
 
 	$(window).load(function() {
         		$('#slider').nivoSlider({
@@ -47,13 +61,12 @@ $(document).ready(function(){
 	//xPosition - Horizontal position of the element
 	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	$('#section-1').parallax("50%", 0.2);
 	$('#section-3').parallax("50%", 0.1);
 })
 </script>
 </head>
 <body>
-	<nav id="mainnav">	
+	<nav id="mainnav" class="nav">	
 		<div id="innernav">
 			<img src="images/logo.png">
 			<ul id="navlist">
@@ -72,9 +85,9 @@ $(document).ready(function(){
 					<div id="wrapper">
        						<div class="slider-wrapper theme-default">
          						<div id="slider" class="nivoSlider">
-                						<img src="images/slider1.jpg" data-thumb="images/toystory.jpg" alt="" />
-           							<img src="images/slider2.jpg" data-thumb="images/up.jpg" alt="" />
-                						<img src="images/slider3.jpg" data-thumb="images/walle.jpg" alt="" data-transition="slideInLeft" />
+                						<img src="images/slider1.jpg" data-thumb="images/slider1.jpg" alt="" />
+           							<img src="images/slider2.jpg" data-thumb="images/slider2.jpg" alt="" />
+                						<img src="images/slider3.jpg" data-thumb="images/slider3.jpg" alt="" data-transition="slideInLeft" />
             						</div>
         						</div>
     					</div>
